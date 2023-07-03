@@ -54,7 +54,7 @@ body{
   animation: fade-left 0.5s ease-in;
 }
 .active.fade-right {
-  animation: fade-right 1s ease-in;
+  animation: fade-right 0.5s ease-in;
 }
 
 @keyframes fade-left {
