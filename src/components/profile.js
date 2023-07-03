@@ -10,7 +10,7 @@ function Profile(props) {
   return (
     <div className="container mt-3 py-5">
       <div className="background-image"></div>
-      <div className="row text-center align-items-center py-3">
+      <div className="row text-center align-items-center py-3 ">
         <div className="col-12 col-md-6">
           <img
             className="img-fluid rounded-circle p-5 w-75"
