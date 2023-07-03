@@ -26,8 +26,10 @@ function SkillsSection(){
                     <div className="container text-center">
                     <h1 className="font-weight-light"><span className="text-info">Technology</span> Stack</h1>
                     <div className="lead pb-4">I Design Develop & Deliver with these Weapons</div>
-                    <div className="py-5">
-                        {finalSkillRow}
+                    <div className="py-5 ">
+                        
+                           {finalSkillRow} 
+                          
                     </div>
                     </div>
                     </div>

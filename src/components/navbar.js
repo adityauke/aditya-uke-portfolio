@@ -4,7 +4,7 @@ import logo from "../assets/image-removebg-preview.png";
 
 function Navbar() {
   return (
-      <nav className="navbar navbar-expand-lg  fixed-top" style={{backgroundColor:"rgb(37 37 43 / 6%)",  backdropFilter:"blur(30px)"}}>
+      <nav className="navbar navbar-expand-lg  fixed-top" style={{backgroundColor:"rgb(59 59 63 / 47%)",  backdropFilter:"blur(30px)"}}>
         <div className="container">
           <div className="logo-container" >
             <Link to="/">
@@ -21,10 +21,10 @@ function Navbar() {
               <Link to="/contact"className="nav-link" aria-current="page" >Contact Me</Link>
               </li> */}
               <Link to="/contact">
-             <button className="btn btn-outline-info">Contact me</button>
+             <button className="btn btn-outline-info ">Contact me</button>
            </Link>
               <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" href="/" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a className="nav-link dropdown-toggle text-light" href="/" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Menu
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">

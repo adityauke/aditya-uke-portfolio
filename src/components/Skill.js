@@ -17,7 +17,7 @@ import { v4 as uuid} from "uuid";
 
   return (
     <div style={{border:"2px"}}>
-                <img className="rounded-circle"  src={imgUrl} alt={name} style= {{width: "100px" , height: "100px"  }}/>
+                <img className=" rounded-circle"  src={imgUrl} alt={name} style= {{width: "100px" , height: "100px"  }}/>
                 <div>
                     {starsList}
                 </div>

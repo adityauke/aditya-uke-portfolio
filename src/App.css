@@ -28,3 +28,66 @@ body{
 .navbar{
   position:absolute;
 }
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-image: url("./assets/slider.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(5px) brightness(1.1);
+}
+
+.project-card {
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 8px 16px rgb(0, 0, 0);
+  background-color: rgba(222, 210, 210, 0.121);
+}
+
+.card.animate {
+  animation: fade-in 5s ease;
+}
+
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+.active.fade-left {
+  animation: fade-left 0.5s ease-in;
+}
+.active.fade-right {
+  animation: fade-right 0.5s ease-in;
+}
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
