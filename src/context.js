@@ -118,7 +118,7 @@ export class Provider extends Component {
           title: "Path-finding Visualizer",
           description: "Pathfinding Visualizer is a straightforward method using node.js modules and API to create visual representations of distance on a map. By randomly placing waypoints/nodes and connecting them, it forms a graph, enabling easy route finding.",
           imgUrl: require("./assets/pv-1.png"),
-          prjLink: "https://github.com/adityauke",
+          prjLink: "https://pathfindingvisualizertomtom.netlify.app/",
         },
         {
           id: 3,
