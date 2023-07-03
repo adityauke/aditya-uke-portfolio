@@ -9,7 +9,7 @@ function RecommendationSection() {
             {(value) => {
                 const {recommendations} = value;
                 return (
-                    <div className="container-fluid py-3" >
+                    <div className="container-fluid py-3 reveal fade-left" >
                         <div className="row text-center py-5 d-flex flex-nowrap overflow-auto scrollbar">
                             {recommendations.map((recommendation)=>(
                                 <RecommendationCard Key={uuid()} recommendation={recommendation}/>
