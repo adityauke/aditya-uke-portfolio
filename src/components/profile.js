@@ -1,15 +1,29 @@
 import React from "react";
 // import Aditya from "../assets/adityauke.png";
+import Typed from 'typed.js';
 
 function Profile(props) {
   // const name="Aditya Uke";
   // const leadText="I am a Student at ARMIET";
 
   const { name, leadText } = props;
+  const el = React.useRef(null);
+  React.useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: ['Student', 'Learner', 'Developer'],
+      typeSpeed: 50,
+      loop: true,
+    });
+
+    return () => {
+      typed.destroy();
+    };
+  }, []);
 
   return (
-    <div className="container mt-3 py-5">
-      <div className="background-image"></div>
+  
+    <div className="container mt-3 py-5 ">
+      <div className="background-image "></div>
       <div className="row text-center align-items-center py-3 ">
         <div className="col-12 col-md-6">
           <img
@@ -19,10 +33,11 @@ function Profile(props) {
           />
         </div>
         <div className="col-12 col-md-5 ">
-          <div className="font-weight-light" style={{ fontSize: "50px" , /*paddingRight: "5rem"*/}}>
+          <div className="font-weight-light" style={{ fontSize: "50px"}}>
             Hi, I am <span className="text-info"> {name}</span>
           </div>
-          <h4 className="font-weight-light">{leadText}</h4>
+          <h4 className="font-weight-light">I'm a <span className="text-info" ref={el}></span></h4>
+          
           
         </div>
       </div>
@@ -33,12 +48,4 @@ function Profile(props) {
 export default Profile;
 
 
-// Profile.defaultProps={
-//    name : "Adiii",
-//    leadText : "Student at Armiet", 
-// }
-
-// Profile.propTypes = {
-//     name: PropTypes.string.isRequired,
-// }
 
