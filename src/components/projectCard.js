@@ -5,16 +5,22 @@ function ProjectCard(props) {
   const { title, description, imgUrl, prjLink } = props;
 
   return (
-    <div className="card shadow h-100 project-card">
-      <img className="card-img-top" src={imgUrl} alt="Project Thumbnail" />
-      <div className="card-body">
-        <h4 className="card-title">{title}</h4>
-        <p className="card-text">{description}</p>
-        <a href={prjLink} className="stretched-link"></a>
-      </div>
-    </div>
+       <div class="blog-card">
+          <div class="meta">
+            <div class="photo">
+            <img className="card-img-top" src={imgUrl} alt="Project Thumbnail" /></div>
+          </div>
+          <div class="description">
+            <h1>{title}</h1>
+            {/* <h2>Opening a door to the future</h2> */}
+            <p> {description}</p>
+            <p class="read-more">
+                <a href={prjLink} >
+            <button type="button" class="btn btn-info">Demo</button></a>
+            </p>
+          </div>
+          </div>
   );
 }
-
 export default ProjectCard;
 
