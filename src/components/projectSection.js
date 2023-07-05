@@ -8,7 +8,8 @@ function ProjectSection() {
     <Consumer>
       {(value) => {
         return (
-          <div className="container text-center py-5">
+          
+          <div className="container-fluid text-center py-5" id="projects-section" style={{backgroundColor:"rgb(235 249 255 / 25%)"}}>
             <h1 className="font-weight-light">
               My <span className="text-info">Projects</span>
             </h1>
@@ -17,7 +18,7 @@ function ProjectSection() {
             </div>
             <div className="reveal fade-right row my-3 pt-2">
               {value.projects.slice(0, 3).map((project, index) => (
-                <div key={index} className="col-12 col-md-4 my-3">
+                <div key={index} className=" my-3">
                   <ProjectCard
                     title={project.title}
                     description={project.description}
