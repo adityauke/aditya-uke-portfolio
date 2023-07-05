@@ -52,7 +52,7 @@ class WriteRecommendation extends Component {
           const {submitMessage,submitMessageTextColor}=this.state;
           const{handler} = value
     return (
-      <div className="comtainer-fluid py-5" >
+      <div className="comtainer-fluid py-5" style={{backgroundColor:"rgb(235 249 255 / 20%)"}}>
         <h1 className="font-weight-light text-center my-4"><span className="text-info " >Thank You!</span> for Taking Your Time</h1>
 
         <div className="row justify-content-center">
