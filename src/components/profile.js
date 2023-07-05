@@ -22,7 +22,7 @@ function Profile(props) {
 
   return (
   
-    <div className="container mt-3 py-5 ">
+    <div className="container mt-3 py-5 " id="home-section">
       <div className="background-image "></div>
       <div className="row text-center align-items-center py-3 ">
         <div className="col-12 col-md-6">
@@ -34,7 +34,7 @@ function Profile(props) {
         </div>
         <div className="col-12 col-md-5 ">
           <div className="font-weight-light" style={{ fontSize: "50px"}}>
-            Hi, I am <span className="text-info"> {name}</span>
+            Hi, I am <span className=" text-info"> {name}</span>
           </div>
           <h4 className="font-weight-light">I'm a <span className="text-info" ref={el}></span></h4>
           
