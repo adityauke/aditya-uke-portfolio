@@ -1,64 +1,54 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from "../assets/image-removebg-preview.png";
 
 function Navbar() {
-  return (
-      <nav className="navbar navbar-expand-lg  fixed-top" style={{backgroundColor:"rgb(59 59 63 / 47%)",  backdropFilter:"blur(30px)"}}>
-        <div className="container">
-          <div className="logo-container" >
-            <Link to="/">
-              <img src={logo} alt="Logo" style={{height: "45px",width: "80%"}}/>
-            </Link>
-            
-          </div>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-            <ul className="navbar-nav">
-              {/* <li className="nav-item">
-              <Link to="/contact"className="nav-link" aria-current="page" >Contact Me</Link>
-              </li> */}
-              <Link to="/contact">
-             <button className="btn btn-outline-info ">Contact me</button>
-           </Link>
-              <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle text-light" href="/" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Menu
-                </a>
-                <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><Link className="dropdown-item" to="/project/all">Projects</Link></li>
-                  {/* <li><Link className="dropdown-item" to="#">Blogs</Link></li> */}
-                  <li><Link className="dropdown-item" to="/write-a-recommendation">Recommendation</Link></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+  return ( 
+    <nav className="navbar navbar-expand-lg  fixed-top">
+      <div className="container">
+        <div className="logo-container">
+          <NavLink exact to="/">
+            <img src={logo} alt="Logo" style={{ height: "45px", width: "80%" }} />
+          </NavLink>
         </div>
-      </nav>
-    
-     
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li className="nav-item">
+              <a className="nav-link" href="/#home-section">
+                Home
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/#projects-section">
+                Projects
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/#about-section">
+                About me
+              </a>
+            </li>
+          </ul>
+          <NavLink to="/contact">
+            <button className="btn btn-outline-dark btn-hover" style={{ fontFamily: "Verdana, Geneva, Tahoma, sans-serif" }}>
+              Contact me
+            </button>
+          </NavLink>
+        </div>
+      </div>
+    </nav>
   );
 }
 
 export default Navbar;
-/* <nav classNameName="navbar navbar-expand-md fixed-top bg-light">
-       <div classNameName="container my-2">
-         <Link to="/" classNameName="navbar-brand text-dark font-weight-bold">
-         <img src={logo} alt="Logo" classNameName="navbar-logo" style={{maxWidth:"100%" , maxHeight:"100%"}}/>
-         </Link>
-         <Link to="/" classNameName="navbar-brand text-dark font-weight-bold">
-           Aditya Uke
-         </Link>
-
-         <div classNameName="navbar-nav ml-auto">
-           <Link to="/contact">
-             <button classNameName="btn btn-outline-info">Contact me</button>
-           </Link>
-           <Link to="/" classNameName="nav-item nav-link text-dark h6 mx-3 my-auto">
-             Blogs
-           </Link>
-         </div>
-       </div>
-     </nav> */
