@@ -28,7 +28,7 @@ function Footer() {
             </Link>
           </div>
           <div className="col-12 col-md-4 font-weight-light text-light justify-content-around py-3">
-            <p style={{ textJustify: "auto" }}>
+            <p style={{ textJustify: "auto" ,}}>
               Hello! I'm Aditya Uke, Motivated and dedicated Computer Engineering student pursuing a bachelor’s degree at ARMIET College. Proficient in responsive web designing, Front-End Technologies, React.js, technologies, seeking opportunities to gain real-life experience in Computer Engineering and contribute to innovative projects while developing skills.
             </p>
           </div>
@@ -49,7 +49,7 @@ function Footer() {
               <i className="bi bi-instagram h4 text-light d-block py-1"></i>
             </Link> */}
           </div>
-          <div className="text-muted py-4">
+          <div className="text-secondary py-4">
             <h6>All rights reserved @Aditya</h6>
           </div>
         </div>
