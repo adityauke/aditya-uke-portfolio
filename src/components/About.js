@@ -2,7 +2,7 @@ import React from 'react'
 
 function About() {
   return (
-    <div className="bg-light">
+    <div className="bg-light" id="about-section">
 <div className="container p-5 bg-light text-center py-5" >
     <h1 className="font-weight-light"><span className="text-info">About </span>Me</h1>
     <div className="lead pb-4">I can develop the front end and the back end of the app</div>
