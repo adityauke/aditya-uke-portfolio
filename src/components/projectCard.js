@@ -12,7 +12,7 @@ function ProjectCard(props) {
           </div>
           <div class="description">
             <h1>{title}</h1>
-            {/* <h2>Opening a door to the future</h2> */}
+            <h2>Academic Project</h2>
             <p> {description}</p>
             <p class="read-more">
                 <a href={prjLink} >
