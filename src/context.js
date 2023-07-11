@@ -111,7 +111,7 @@ export class Provider extends Component {
           title: "Plant Leaf Disease Prediction",
           description: "A Web-Application which predicts the diseases in the plant's leaves using the CNN model, a deep learning model. We trained 10 classes of leaves in our datasets and 5 layers of the CNN model which helps in predicting disease in plant leaves.",
           imgUrl: require("./assets/pld-1.jpg"),
-          prjLink: "https://github.com/adityauke",
+          prjLink: "https://github.com/adityauke/PLANT-LEAF-DISEASE-PREDICTION",
         },
         {
           id: 2,
