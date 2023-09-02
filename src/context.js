@@ -127,6 +127,27 @@ export class Provider extends Component {
           imgUrl: require("./assets/AW-1.jpg"),
           prjLink: "https://github.com/adityauke",
         },
+      {
+          id: 4,
+          title: "QR Code Generator",
+          description: "Easily generate QR codes on our website. Just input data and my user-friendly tool creates QR codes for you.",
+          imgUrl: require("./assets/QrCode.png"),
+          prjLink: "https://adityauke.github.io/QR-Code-Generator/",
+        },
+      {
+          id: 5,
+          title: "Bubble Burst Game",
+          description: "Pop bubbles in this fun JavaScript game! Hit the bubbles displayed in the panel and enjoy the burst of excitement.",
+          imgUrl: require("./assets/bubbleGame.png"),
+          prjLink: "https://adityauke.github.io/Bubble-Burst-Game/",
+        },
+       {
+          id: 6,
+          title: "To-Do List",
+          description: "Create a todo list effortlessly with JavaScript, leveraging local storage for seamless task management. Your personalized, efficient task organizer.",
+          imgUrl: require("./assets/todoList.png"),
+          prjLink: "https://adityauke.github.io/To-Do-List/",
+        },
       ],
     };
   }
