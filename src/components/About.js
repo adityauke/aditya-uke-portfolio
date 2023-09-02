@@ -9,7 +9,7 @@ function About() {
         <div className="row ">
             <div className="col-12 col-md-6 p-3" >
                 <h5>What I can do?</h5>
-                <p style={{textAlign: "justify"}}>Aditya Uke is proficient in responsive web design, front-end technologies, React.js, and Python, with a strong foundation in programming languages such as HTML5/CSS3, Bootstrap, JavaScript, and Java.</p>
+                <p style={{textAlign: "justify"}}>Aditya Uke is proficient in responsive web development, front-end technologies, React.js, and Python, with a strong foundation in programming languages such as HTML5/CSS3, Bootstrap, JavaScript, and Java.</p>
             </div>
             <div className="col-12 col-md-6 p-3">
                 <h5>What am I doing Currently?</h5>
@@ -22,7 +22,7 @@ function About() {
             </div>
             <div className="col-12 col-md-6 p-3">
                 <h5>How I can help?</h5>
-                <p style={{textAlign: "justify"}}>Aditya Uke can contribute to innovative projects, offer skills in responsive web design, front-end technologies, React.js, and Python, and provide valuable insights and dedication to the team.</p>
+                <p style={{textAlign: "justify"}}>Aditya Uke can contribute to innovative projects, offer skills in responsive web development, front-end technologies, React.js, and Python, and provide valuable insights and dedication to the team.</p>
             </div>
         </div>
             
