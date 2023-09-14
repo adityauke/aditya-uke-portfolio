@@ -75,6 +75,20 @@ export class Provider extends Component {
             starsActive:3
         },
         {
+            id:10,
+            name:"Tailwind CSS",
+            imgUrl:require("./assets/tailwind.png"),
+            starsTotal:3,
+            starsActive:3
+        },
+        {
+            id:11,
+            name:"Next JS",
+            imgUrl:require("./assets/Nextjs.png"),
+            starsTotal:3,
+            starsActive:2
+        },
+        {
             id:6,
             name:"mySql",
             imgUrl:require("./assets/mysql.jpg"),
@@ -88,13 +102,13 @@ export class Provider extends Component {
             starsTotal:3,
             starsActive:3
         },
-        // {
-        //     id:8,
-        //     name:"Flask",
-        //     imgUrl:require("./assets/flask.png"),
-        //     starsTotal:3,
-        //     starsActive:2
-        // },
+        {
+            id:8,
+            name:"Flask",
+            imgUrl:require("./assets/flask.png"),
+            starsTotal:3,
+            starsActive:2
+        },
         {
             id:9,
             name:"Java",
